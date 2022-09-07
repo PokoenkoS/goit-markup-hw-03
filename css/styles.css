@@ -9,6 +9,22 @@
     --text-color-white:  #FFFFFF;
     --text-color-black: #000000;
     }
+
+    .list{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      }
+     h1,
+     h2,
+     h3,
+     p,
+     ul {
+      margin-top: 0;
+      margin-bottom: 0;
+     } 
+
+
 body {
 background-color: var(--primary-white-color);
 color: var(--secondary-text-color);
@@ -16,48 +32,56 @@ font-family: Roboto, sans-serif;
 letter-spacing: 0.03em;
 }
 
-.list{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    }
-   h1,
-   h2,
-   h3,
-   p,
-   ul {
-    margin-top: 0;
-    margin-bottom: 0;
-   } 
-
-
 
 /* Стилі для index.html */
 .container {
+  
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid tomato;
   padding-left: 15px;
   padding-right: 15px;
+  align-items: center;
   
 }
 .header {
 background-color: var(--text-color-white);
 }
 /* Стилі навігаціі */
+.main {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav,
 .site-contact {
+  display: flex;
+  
  font-weight: 500;
  font-size: 14px;
  line-height: 1,43;
  letter-spacing: 0.02em;
 }
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 50px;
 color: var(--primary-text-color);
 text-decoration: none;
   }
+  .site-nav .item: :last-child {
+    margin-right: 0;
+  }
+.site-nav .list {
+  display: flex;
+  align-items: center;
+}
+
  .site-nav .link.current {
+  
+  margin-right: 50px;
 color: var(--accent-color)
   }
 .site-nav .link:hover,
@@ -66,16 +90,33 @@ color: var(--accent-color);
   }
 
   /* Стилі контактів */
-  
+  .site-contact {
+    display: flex;
+    margin-left: auto;
+  }
+
 .site-contact .link {
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
 text-decoration: none;
 color: var(--secondary-text-color);
+}
+.site-contact .item+.item {
+  margin-left: 50px;
 }
  .site-contact .link:hover,
  .site-contact .link:focus {
 color: var(--accent-color);
   }
+  .site-contact .tel {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+  }
  .tel {
+  
 color: var(--secondary-text-color);
 text-decoration: none;
   }
@@ -86,6 +127,10 @@ text-decoration: none;
 
 /* Стилі лого*/
 .logo {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 93px;
 color: var(--text-color-black);
 text-decoration: none;
 font-family: Raleway, sans-serif;
