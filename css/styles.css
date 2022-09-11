@@ -83,10 +83,9 @@ display: flex;
 align-items: center;
 }
 
-.site-nav .link .current {
+.site-nav .link.current {
 display: block;
-margin-right: 50px;
-color: var(--accent-color)
+color: var(--accent-color);
 }
 
 .site-nav .link:hover,
@@ -180,6 +179,10 @@ width: 696px;
 }
 
 .hero-button {
+display: block;
+margin-left: auto;
+margin-right: auto;
+
 background: var(--accent-color);
 color: var(--text-color-white);
 font-weight: 700;
