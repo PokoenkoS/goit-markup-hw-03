@@ -170,8 +170,6 @@ font-size: 44px;
 line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-padding-top: 200px;
-padding-bottom: 280px;
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 30px;
@@ -210,18 +208,19 @@ padding-bottom: 94px;
 }
 
 /*  Секція якості */
+
 .quality {
-    position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
 }
 .section-list {
 display: flex;
